@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Appp } from './appp/appp';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule],
+  imports: [CommonModule,Appp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -32,15 +33,13 @@ export class App {
   }
   g = 's'
 
-  s = (
-    color = "red  ",
-    fontsize = "25px",
-    border = "2px solid red"
-  ) => {
-    return {
-      'color': color,
-      'font-size': fontsize,
-      'border': border
-    }
+  s =   {
+      'color': 'aqua',
+      'font-size': '400px',
+      'border': '3px solid blue'
+    
+  }
+  gg() {
+    
   }
 }
